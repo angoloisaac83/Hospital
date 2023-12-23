@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans&family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="/dist/output.css" rel="stylesheet">
+        <title>
+            Find A Location</title>
+    </head>
+                <!-- nav 1 -->
+                <nav class="w-full h-fit flex items-center justify-between px-[25px] bg-white">
+                    <p></p>
+                    <img src="/src/images/NTCC1.jpg" class="h-[80px]" alt="">
+                    <span id="search" class="material-symbols-outlined">
+                        search
+                        </span>
+                </nav>
+                <!-- nav2 -->
+                <nav class="w-full h-fit px-[20px] py-[10px] bg-[#002D56]">
+                    <div class="flex text-white gap-[15px] items-center justify-center w-fit">
+                        <span id="hambuger-open" class="flex sm:hidden flex-col gap-[4px]">
+                            <p class="w-[30px] h-[5px] bg-[white] rounded-full"></p>
+                            <p class="w-[30px] h-[5px] bg-[white] rounded-full"></p>
+                            <p class="w-[30px] h-[5px] bg-[white] rounded-full"></p>
+                        </span>
+                        <p>Find A Location</p>
+                        <form action="" id="form" class="hidden h-full gap-[5px] pr-[10px]">
+                        <input placeholder="Search Our Site" type="search" name="" class="h-[30px] rounded-sm placeholder:text-black pl-[10px]" id="">
+                        <button class="w-fit py-[3px] rounded-sm bg-white text-black px-[3px]">Go</button>
+                    </form>
+                    </div>
+                </nav>
+                <!-- HambugerSect -->
+
+        <section id="HambugerSect" class="fixed transition-all duration-[.7s] flex overflow-y-scroll flex-col z-20 bg-white shadow-xl h-[100vh] left-[-80%] w-[80%] top-0">
+            <nav class="w-full text-white px-[30px] flex justify-between items-center py-[15px] bg-[#002D56]">
+                <p id="head">Navigation</p>
+                <span id="hambuger-close" class="flex flex-col gap-[4px] border-l-[1px] border-white pl-[10px]">
+                    <p class="w-[30px] h-[5px] bg-[white] rounded-full rotate-[45deg] mt-[-6px]"></p>
+                    <p class="w-[30px] h-[5px] bg-[white] rounded-full rotate-[-45deg] mt-[-8px]"></p>
+                </span>
+            </nav>
+            <ul>
+                <li class="flex items-center justify-between px-[15px] border-b-[1px] border-black py-[15px]">
+                   <a href="physician.html">Find A Physician</a> 
+                </li>
+                <li id="find" class="flex items-center justify-between px-[15px] border-b-[1px] border-black py-[15px]">
+                    Find A Location
+                    <span class="material-symbols-outlined">
+                        chevron_right
+                        </span>
+                </li>
+                <li class="flex items-center justify-between px-[15px] border-b-[1px] border-black py-[15px]">
+                    Health Care Services
+                    <span class="material-symbols-outlined">
+                        chevron_right
+                        </span>
+                </li>
+                <li class="flex items-center justify-between px-[15px] border-b-[1px] border-black py-[15px]">
+                    Patient Resources
+                    <span class="material-symbols-outlined">
+                        chevron_right
+                        </span>
+                </li>
+                <li class="flex items-center justify-between px-[15px] border-b-[1px] border-black py-[15px]">
+                    News
+                    <span class="material-symbols-outlined">
+                        chevron_right
+                        </span>
+                </li>
+                <li class="flex flex-col items-center justify-between px-[15px] pb-[15px]">
+                    <li class="flex items-center justify-between border-b-[1px] border-black px-[15px] py-[15px]">
+                    About Us
+                    <span onclick="about()" id="arr" class="material-symbols-outlined">
+                        chevron_right
+                        </span>
+                    </li>
+                    <ul id="about-dropdown" class="pl-[40px] gap-[10px] transition-all duration-[.5s] overflow-hidden h-[0px] flex flex-col capitalize border-black">
+                        <a href="About.html"><li>About us</li></a>
+                        <li>awards & recognition</li>
+                        <li>administrative team</li>
+                        <li>phone Directory</li>
+                        <li>volunteer services</li>
+                        <li class="flex items-center justify-center w-fit">supply chains <span class="material-symbols-outlined">
+                            chevron_right
+                            </span></li>
+                        <li></li>
+                    </ul>
+                </li>
+                <li class="flex items-center justify-between px-[15px] border-b-[1px] border-black py-[15px]">
+                   <a href="covid.html"> COVID-19</a>
+                </li>
+                <li class="flex items-center justify-between px-[15px] border-b-[1px] border-black py-[15px]">
+                    <img class="w-[60%]" src="/src/images/healthspirations-logo-blue-2x.png" alt="">
+                </li>
+            </ul>
+        </section>
+                <header class="w-full h-fit flex flex-col">
+                    <span class="m-auto text-3xl font-medium pt-[30px]">
+                        Find A Location
+                    </span>
+                    <p class="m-auto text-[17px] font-medium px-[20px] pt-[13px] text-[#0077c0]"> The Christ Hospital Health Network – In Your Neighborhood</p>
+                    <form action="" class="m-auto w-full px-[10px] py-[12px] flex items-center justify-center">
+                        <input type="text" class="py-[5px] rounded-md pl-[12px] outline-none w-[80%] border-[2px] border-[gray]" name="" id="" placeholder="Search by Keywords">
+                        <button type="submit" class="w-fit flex items-center justify-center h-fit rounded-md bg-[gray] py-[6px] text-white px-[8px]"> <span id="search" class="material-symbols-outlined">
+                            search
+                            </span></button>
+                    </form>
+                    <br>
+                    <br>
+                    <br>
+                    <div class="w-full h-fit flex flex-col px-[20px]">
+                    <span class="py-[4px] text-lg font-semibold border-b-[1px] border-[gray]">
+                        Advanced search
+                    </span>
+                    <p class="py-[10px] text-[#0077c0] text-lg font-medium">Search by Location Type</p>
+                    <form action="" class="flex gap-[10px] flex-col items-end justify-end w-[90%]">
+                        <input class="border-[1px] w-full pl-[12px] py-[4px] border-black placeholder:text-black" placeholder="All Location Types" type="text" name="" id="">
+                        <input class="border-[1px] w-full pl-[12px] py-[4px] border-black placeholder:text-black" placeholder="Zip Code" type="text" name="" id="">
+                        <button type="submit" class="w-fit h-fit px-[16px] py-[6px] text-white bg-[#f29925]">Search</button>
+                    </form>
+                </div>
+                <br>
+                </header>
+                <footer class="w-full bg-[#002d56] py-[25px] px-[25px] text-white">
+                    <p class="font-semibold">THE CHRIST HOSPITAL <br>
+                        MAIN CAMPUS<br>
+                        2139 Auburn Ave<br>
+                        Cincinnati, OH 45219<br>
+                        (513) 585-2000</p>
+                         <p class="font-semibold pt-[10px]">CONTACT US</p>
+                        <ul class="text-[13px] pt-[10px] gap-[15px] flex flex-wrap w-[90%]">
+                            <li class="pr-[20px] border-r-[2.5px] border-[white]">Phone Directory</li>
+                            <li class="pr-[20px] border-r-[2.5px] border-[white]">Patient Portal</li>
+                            <li class="pr-[20px] border-r-[2.5px] border-[white]">Pay Your Bill</li>
+                            <li class="pr-[20px] border-r-[2.5px] border-[white]">Email</li>
+                            <li class="pr-[20px] border-r-[2.5px] border-[white]">Social Networks</li>
+                            <li>Giving</li>
+                        </ul>
+                        <p class="font-semibold pt-[10px]">EXPLORE</p>
+                        <ul class="text-[13px] pt-[10px] gap-[15px] flex flex-wrap w-[90%]">
+                            <li class="pr-[20px] border-r-[2.5px] border-[white]">                    Find a Location
+                            </li>
+                            <li class="pr-[20px] border-r-[2.5px] border-[white]">Calendar of Events</li>
+                            <li class="pr-[20px] border-r-[2.5px] border-[white]">News Room</li>
+                            <li class="pr-[20px] border-r-[2.5px] border-[white]">Careers</li>
+                            <li class="pr-[20px] border-r-[2.5px] border-[white]">Community Report</li>
+                            <li>A-Z Listing of Physicians & Providers</li>
+                        </ul>
+                        <p class="font-semibold pt-[10px]">RESORCES</p>
+                        <ul class="text-[13px] pt-[10px] gap-[15px] flex flex-wrap w-[90%]">
+                            <li class="pr-[20px] border-r-[2.5px] border-[white]">Patient Guide</li>
+                            <li class="pr-[20px] border-r-[2.5px] border-[white]">Visitor Guide</li>
+                            <li class="pr-[20px] border-r-[2.5px] border-[white]">For Health Care Professionals</li>
+                            <li class="pr-[20px] border-r-[2.5px] border-[white]">Terms of Use</li>
+                            <li class="pr-[20px] border-r-[2.5px] border-[white]">Privacy Policy</li>
+                            <li>Nondiscrimination/Accessibility</li>
+                        </ul>
+                        <p class="font-semibold pt-[10px]">GET OUR APP</p>
+                        <ul class="flex items-start gap-[10px] justify-start pt-[10px] w-full ">
+                            <img class="w-[144px]" src="/src/images/Download_on_the_App_Store_Badge_US-UK_RGB_blk_092917.svg" alt="">
+                            <img class="w-[154px]" class="w-[200px]" src="/src/images/google_play.svg" alt="">
+                        </ul>
+                        <p class="font-semibold pt-[10px]">EXPLORE</p>
+                        <ul>
+                            <ul>
+        
+                            </ul>
+                        </ul>
+                        <p class="pt-[30px] text-[11px] ml-[100px] m">© 2023 The Christ Hospital. All Rights Reserved.</p>
+                </footer>
+    </section>
+    <script src="/src/scripts/index.js"></script>
+</body>
+</html>
